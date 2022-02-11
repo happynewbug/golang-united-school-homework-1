@@ -12,4 +12,6 @@ func TestGetMessage(t *testing.T) {
 	if !strings.EqualFold(actual, expect) {
 		t.Errorf("actual %q expect %q", actual, expect)
 	}
+
+	t.Log("OK!")
 }
