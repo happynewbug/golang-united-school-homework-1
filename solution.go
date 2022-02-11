@@ -1,5 +1,14 @@
-package solution
+package main
+
+import (
+	"fmt"
+	"github.com/kyokomi/emoji"
+)
 
 func GetMessage() string {
-	return ""
+	return emoji.Sprint("Hello 🗺️!")
+}
+
+func main() {
+	fmt.Println(GetMessage())
 }
