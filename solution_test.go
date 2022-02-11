@@ -1,12 +1,15 @@
 package solution
 
-import "testing"
+import (
+	"strings"
+	"testing"
+)
 
 func TestGetMessage(t *testing.T) {
 	actual := GetMessage()
 	expect := "Hello 🗺️!"
 
-	if actual != expect {
+	if !strings.EqualFold(actual, expect) {
 		t.Errorf("actual %q expect %q", actual, expect)
 	}
 }
